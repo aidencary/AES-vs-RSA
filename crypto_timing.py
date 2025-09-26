@@ -2,13 +2,15 @@
 # Information Security Assignment - Parts 1 & 2
 # 
 # CODE ATTRIBUTION:
-# - Core structure and timing framework: Written by student
+# - Core structure and timing framework: Written by Aiden Cary
 # - AES/RSA implementation: Adapted from PyCryptodome library documentation
 # - Avalanche effect testing: Student-designed implementation
 # - Hamming distance calculation: Standard algorithm, student implementation
 #
 # Dependencies: pycryptodome
 # Example usage: python crypto_timing.py
+
+# Made entirely by Claude and ChatGPT other than main experiment flow and print functions
 
 import os
 import time

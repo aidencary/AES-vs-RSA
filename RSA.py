@@ -1,6 +1,7 @@
 # RSA.py
 # Aiden Cary
 # Information Security Assignment 3
+# Used to test RSA encryption and decryption with files created in rand_word_file_generator.py
 
 # Imports
 from cryptography.hazmat.primitives.asymmetric import rsa, padding
@@ -11,7 +12,7 @@ import time
 private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
 public_key = private_key.public_key()
 
-# Encrypt & Decrypt
+# RSA Encryption and Decryption Functions made with ChatGPT
 def rsa_encrypt(message):
     return public_key.encrypt(
         message,
@@ -24,6 +25,7 @@ def rsa_decrypt(ciphertext):
         padding.OAEP(mgf=padding.MGF1(algorithm=hashes.SHA256()), algorithm=hashes.SHA256(), label=None)
     )
 
+# Main execution for benchmarking created my Aiden Cary to test RSA with the files created in rand_word_file_generator.py
 if __name__ == "__main__":
     print("RSA Encryption/Decryption Benchmark")
     print("What size file would you like to test with RSA?")

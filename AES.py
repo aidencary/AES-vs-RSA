@@ -25,7 +25,7 @@ def aes_decrypt(ciphertext, key, iv):
     unpadder = padding.PKCS7(128).unpadder()
     return unpadder.update(decrypted_padded) + unpadder.finalize()
 
-# Main execution for benchmarking created my Aiden Cary to test AES with the files created in rand_word_file_generator.py
+# Main execution for benchmarking created me Aiden Cary to test AES with the files created in rand_word_file_generator.py
 if __name__ == "__main__":
     print("AES Encryption/Decryption Benchmark")
     print("What size file would you like to test with AES?")
